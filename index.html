@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Flower Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="media/Image 02-1.png" alt="Логотип Sweet Flower Shop">
+            </a>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+              <li class="dropdown">
+  <a href="#gallery">Каталог &#9662;</a>
+  <ul class="submenu">
+    <li><a href="#gallery">Півонії</a></li>
+    <li><a href="#gallery">Авторські букети</a></li>
+  </ul>
+</li>
+                <li><a href="#survey">Анкета</a></li>
+                <li><a href="#auth">Вхід</a></li>
+            </ul>
+        </nav>
+
+        <form class="search-form" action="#" method="get">
+            <input type="search" name="q" placeholder="Пошук..." aria-label="Пошук по сайту">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> Знайти</button>
+        </form>
+    </header>
+
+    <main class="main-content">
+        <section class="banner">
+            <h1>Sweet Flower Shop</h1>
+            <p>Свіжі квіти та авторські букети з доставкою.</p>
+        </section>
+
+        <section id="gallery" class="catalog-section">
+            <h2>Наші квіти</h2>
+
+            <div class="products-grid">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="media/Image-3.png" alt="Півонія Red Charm">
+                    <span class="img-caption">ПІВОНІЯ «RED CHARM»</span>
+                    </div>
+                    <h3>Півонія "Red Charm"</h3>
+                    <p class="price">120 грн/шт</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="media/images (1).jfif" alt="Півонія Coral Charm">
+                    <span class="img-caption">ПІВОНІЯ «CORAL CHARM»</span>
+                    </div>
+                    <h3>Півонія "Coral Charm"</h3>
+                    <p class="price">120 грн/шт</p>
+                </article>
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="media/Image.png" alt="Півонія Command Performance">
+                        <span class="img-caption">ПІВОНІЯ «COMMAND PERFORMANCE»</span>
+                    </div>
+                    <h3>Півонія "Command Performance"</h3>
+                    <p class="price">100 грн/шт</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="media/images23.jfif" alt="Ніжний букет">
+                    <span class="img-caption">НІЖНИЙ БУКЕТ</span>
+                    </div>
+                    <h3>Ніжний букет</h3>
+                    <p class="composition"><b>Склад:</b> півонії.</p>
+                    <p class="price">1500 грн</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="survey" class="form-section">
+            <h2>Опитувальник клієнта</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Логін:</label>
+                    <input type="text" id="username" name="username" placeholder="Введіть логін" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="name@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="msg">Ваш відгук:</label>
+                    <textarea id="msg" name="message" placeholder="Напишіть відгук..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Улюблені квіти:</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>-- Оберіть варіант --</option>
+                        <option value="roses">Троянди</option>
+                        <option value="peonies">Півонії</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Надіслати</button>
+                    <button type="reset" class="btn btn-secondary">Очистити</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="auth" class="form-section auth-grid">
+            <div class="auth-box">
+                <h2>Авторизація</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="l-email">Email:</label>
+                        <input type="email" id="l-email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="l-pass">Пароль:</label>
+                        <input type="password" id="l-pass" name="password" placeholder="Мін. 8 символів" minlength="8" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Увійти</button>
+                        <button type="reset" class="btn btn-secondary">Очистити</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="auth-box">
+                <h2>Реєстрація</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="r-email">Email:</label>
+                        <input type="email" id="r-email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="r-pass">Пароль:</label>
+                        <input type="password" id="r-pass" name="password" placeholder="Мін. 8 символів" minlength="8" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="r-pass2">Повторіть пароль:</label>
+                        <input type="password" id="r-pass2" name="password_confirm" placeholder="Повторіть пароль" minlength="8" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Зареєструватися</button>
+                        <button type="reset" class="btn btn-secondary">Очистити</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sweet Flower Shop. Чернівці</p>
+    </footer>
+<a href="#top" class="scroll-top-btn" title="Вгору">
+  <span class="arrow-up"></span>
+</a>
+</body>
+</html>
